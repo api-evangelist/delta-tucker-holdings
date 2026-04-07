@@ -1,7 +1,12 @@
 aid: delta-tucker-holdings
-url: https://raw.githubusercontent.com/api-evangelist/delta-tucker-holdings/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/delta-tucker-holdings/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.delta-tucker-holdings.com
+description: >-
+  Delta Tucker Holdings is the parent company of DynCorp International, a provider
+  of specialized mission-critical professional and support services to government
+  and commercial customers.
