@@ -16,7 +16,7 @@ tags:
 created: '2024-12-03'
 modified: '2026-04-28'
 specificationVersion: '0.19'
-xType: company
+kind: company
 description: >-
   Delta Tucker Holdings was the holding company for DynCorp International, a
   provider of specialized mission-critical professional and support services
