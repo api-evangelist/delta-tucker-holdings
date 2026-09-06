@@ -1,9 +1,8 @@
 aid: delta-tucker-holdings
 name: Delta Tucker Holdings
-url: >-
+url: https://raw.githubusercontent.com/api-evangelist/delta-tucker-holdings/refs/heads/main/apis.yml
 x-api-posture: no-product-api
 x-api-posture-basis: observed
-  https://raw.githubusercontent.com/api-evangelist/delta-tucker-holdings/refs/heads/main/apis.yml
 type: Index
 deliveryModel:
   model: unknown
@@ -38,8 +37,11 @@ tags:
   - Mission Support
   - Private Company
 created: '2024-12-03'
-modified: '2026-04-28'
+modified: '2026-09-06'
 specificationVersion: '0.23'
+x-status: defunct
+x-status-detail: Holding company for DynCorp International; DynCorp was acquired by
+  Amentum in 2020 and the holding entity no longer operates or maintains a site.
 kind: company
 description: >-
   Delta Tucker Holdings was the holding company for DynCorp International, a
@@ -53,9 +55,34 @@ common:
   - type: Successor
     url: https://www.amentum.com
   - type: SEC
-    url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=delta+tucker+holdings
+    url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001514226&type=10-K&dateb=&owner=include&count=40
   - type: Notes
     url: https://en.wikipedia.org/wiki/DynCorp
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Delta Tucker Holdings deregistered with the SEC on 2019-10-01 (Form 15-15D, its
+    last filing of any kind) and its operating subsidiary DynCorp International was
+    absorbed into Amentum on 2020-11-23; deltatuckerholdings.com has no DNS at all,
+    dyncorp.com is now a Sedo parking page offering the domain for sale, and the
+    only surviving host, dyn-intl.com, is operated under Amentum and answers a
+    Cloudflare 403 to everything but robots.txt.
+  evidence:
+    - url: https://data.sec.gov/submissions/CIK0001514226.json
+      status: 200
+    - url: https://dyncorp.com/
+      status: 200
+    - url: https://dyn-intl.com/.well-known/security.txt
+      status: 403
+    - url: https://dyn-intl.com/robots.txt
+      status: 200
+  checked: '2026-09-06'

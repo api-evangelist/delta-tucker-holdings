@@ -1,0 +1,125 @@
+# Well-known discovery probe — delta-tucker-holdings
+# A RECORDED ABSENCE. No pointer is wired into apis.yml common[] because no path
+# returned a 200 carrying a real document (see notes[] for the two false-positive
+# shapes hit here: a Cloudflare WAF block page and a Sedo parking catch-all).
+---
+generated: '2026-09-06'
+method: probed
+source: live HTTPS probes of every host associated with this company record
+company: Delta Tucker Holdings
+slug: delta-tucker-holdings
+summary: >-
+  Delta Tucker Holdings has no host of its own. deltatuckerholdings.com does not
+  resolve (no A record, no nameservers). The operating subsidiary's historical
+  domains were probed instead: dyn-intl.com (DynCorp International, now operated
+  under Amentum) answers 403 from a Cloudflare WAF on every path except
+  robots.txt, and dyncorp.com is a Sedo parking page offering the domain for sale.
+  No .well-known document, llms.txt, agent card or spec was served by any host.
+hosts:
+  - host: deltatuckerholdings.com
+    note: >-
+      No DNS. `dig A deltatuckerholdings.com` and `dig NS deltatuckerholdings.com`
+      both return empty — the holding company never had a web presence of its own
+      and does not have one now.
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+        note: DNS resolution failed; no connection attempted.
+  - host: dyn-intl.com
+    note: >-
+      DynCorp International's historical corporate site, the operating subsidiary
+      Delta Tucker Holdings existed to hold. Still resolving behind Cloudflare, but
+      every path except /robots.txt returns a 403 "Attention Required! | Cloudflare"
+      interstitial to our crawler. /robots.txt (HTTP 200) additionally carries
+      `User-agent: ClaudeBot / Disallow: /`, which we honor — no further crawling
+      of this host was attempted. NOT recorded as dead: the origin demonstrably
+      exists, only our probe was turned away. This host is now operated under
+      Amentum, so nothing served from it would be attributed to Delta Tucker
+      Holdings in any case.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+        note: Cloudflare WAF block page (4573 bytes of HTML), not a document.
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null
+      - path: /llms.txt
+        status: 403
+        file: null
+      - path: /openapi.json
+        status: 403
+        file: null
+      - path: /swagger.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /robots.txt
+        status: 200
+        file: null
+        note: >-
+          Served. Cloudflare-managed content-signals block; Content-Signal
+          search=yes, ai-train=no, use=reference; explicit Disallow for ClaudeBot,
+          GPTBot, CCBot, Bytespider, Amazonbot, Google-Extended, meta-externalagent.
+          Not a .well-known document and earns no pointer.
+  - host: dyncorp.com
+    note: >-
+      No longer operated by the company. Nameservers are ns1/ns2.sedoparking.com and
+      the root returns a Sedo listing titled "dyncorp.com - This website is for
+      sale!". The host is a catch-all: unknown paths return 440/441/502, while
+      /llms.txt returns HTTP 200 with the same parking HTML. That 200 is a false
+      positive and is recorded as a MISS, not a document.
+    documents:
+      - path: /.well-known/security.txt
+        status: 440
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 440
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 502
+        file: null
+      - path: /.well-known/api-catalog
+        status: 440
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 441
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 441
+        file: null
+      - path: /.well-known/agent.json
+        status: 441
+        file: null
+      - path: /llms.txt
+        status: 200
+        file: null
+        note: >-
+          NOT a document. Body is the Sedo domain-parking HTML shell
+          (`<!DOCTYPE html>... This website is for sale!`), identical to the root.
+      - path: /openapi.json
+        status: 441
+        file: null
+notes:
+  - No document was retrieved, so no `WellKnown` or `SecurityTxt` pointer is emitted.
+  - >-
+    Two distinct false-positive shapes were encountered and rejected: a Cloudflare
+    403 interstitial (dyn-intl.com) and a parked-domain 200 catch-all (dyncorp.com).
