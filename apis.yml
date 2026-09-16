@@ -30,37 +30,36 @@ position: Consuming
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/delta-tucker-holdings.png
 tags:
-  - Defense
-  - Government Services
-  - Holding Company
-  - Logistics
-  - Mission Support
-  - Private Company
+- Defense
+- Government Services
+- Holding Company
+- Logistics
+- Mission Support
+- Private Company
+- Defunct
 created: '2024-12-03'
-modified: '2026-09-06'
+modified: '2026-09-15'
 specificationVersion: '0.23'
 x-status: defunct
-x-status-detail: Holding company for DynCorp International; DynCorp was acquired by
-  Amentum in 2020 and the holding entity no longer operates or maintains a site.
+x-status-detail: Holding company for DynCorp International; DynCorp was acquired by Amentum in 2020 and
+  the holding entity no longer operates or maintains a site.
 kind: company
-description: >-
-  Delta Tucker Holdings was the holding company for DynCorp International, a
-  provider of specialized mission-critical professional and support services
-  to government and commercial customers, including aviation services,
-  logistics, and training. DynCorp's operations were acquired and integrated
-  into Amentum in 2020. Delta Tucker Holdings does not publish public APIs;
-  this profile is preserved as a corporate-history index.
+description: Delta Tucker Holdings was the holding company for DynCorp International, a provider of specialized
+  mission-critical professional and support services to government and commercial customers, including
+  aviation services, logistics, and training. DynCorp's operations were acquired and integrated into Amentum
+  in 2020. Delta Tucker Holdings does not publish public APIs; this profile is preserved as a corporate-history
+  index.
 apis: []
 common:
-  - type: Successor
-    url: https://www.amentum.com
-  - type: SEC
-    url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001514226&type=10-K&dateb=&owner=include&count=40
-  - type: Notes
-    url: https://en.wikipedia.org/wiki/DynCorp
+- type: Successor
+  url: https://www.amentum.com
+- type: SEC
+  url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001514226&type=10-K&dateb=&owner=include&count=40
+- type: Notes
+  url: https://en.wikipedia.org/wiki/DynCorp
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 x-enrichment:
   date: '2026-09-06'
   status: minimal
@@ -69,20 +68,18 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    Delta Tucker Holdings deregistered with the SEC on 2019-10-01 (Form 15-15D, its
-    last filing of any kind) and its operating subsidiary DynCorp International was
-    absorbed into Amentum on 2020-11-23; deltatuckerholdings.com has no DNS at all,
-    dyncorp.com is now a Sedo parking page offering the domain for sale, and the
-    only surviving host, dyn-intl.com, is operated under Amentum and answers a
-    Cloudflare 403 to everything but robots.txt.
+  detail: Delta Tucker Holdings deregistered with the SEC on 2019-10-01 (Form 15-15D, its last filing
+    of any kind) and its operating subsidiary DynCorp International was absorbed into Amentum on 2020-11-23;
+    deltatuckerholdings.com has no DNS at all, dyncorp.com is now a Sedo parking page offering the domain
+    for sale, and the only surviving host, dyn-intl.com, is operated under Amentum and answers a Cloudflare
+    403 to everything but robots.txt.
   evidence:
-    - url: https://data.sec.gov/submissions/CIK0001514226.json
-      status: 200
-    - url: https://dyncorp.com/
-      status: 200
-    - url: https://dyn-intl.com/.well-known/security.txt
-      status: 403
-    - url: https://dyn-intl.com/robots.txt
-      status: 200
+  - url: https://data.sec.gov/submissions/CIK0001514226.json
+    status: 200
+  - url: https://dyncorp.com/
+    status: 200
+  - url: https://dyn-intl.com/.well-known/security.txt
+    status: 403
+  - url: https://dyn-intl.com/robots.txt
+    status: 200
   checked: '2026-09-06'
