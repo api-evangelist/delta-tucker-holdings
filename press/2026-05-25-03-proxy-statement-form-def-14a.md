@@ -1,7 +1,9 @@
 ---
 title: Proxy Statement (Form DEF 14A)
 url: https://www.publicnow.com/view/F2243B833D18A724285849E28B6619A4215AE43F?1750452459
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Delta Tucker Holdings" press release artificial intelligence'
 position: 3
 source: serpapi-google

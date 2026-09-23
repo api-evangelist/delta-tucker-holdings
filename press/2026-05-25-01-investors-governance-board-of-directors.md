@@ -1,7 +1,9 @@
 ---
 title: Investors - Governance - Board of Directors
 url: https://www.albertsonscompanies.com/investors/governance/board-of-directors/default.aspx
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Delta Tucker Holdings" press release artificial intelligence'
 position: 1
 source: serpapi-google

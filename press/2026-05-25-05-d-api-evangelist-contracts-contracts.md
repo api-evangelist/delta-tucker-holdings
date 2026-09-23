@@ -1,7 +1,9 @@
 ---
 title: D - API Evangelist Contracts - Contracts
 url: https://contracts.apievangelist.com/d/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Delta Tucker Holdings" press release artificial intelligence'
 position: 5
 source: serpapi-google
