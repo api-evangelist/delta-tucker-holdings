@@ -1,4 +1,4 @@
-# Delta Tucker Holdings (delta-tucker-holdings)
+# Delta Tucker Holdings
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,36 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 Delta Tucker Holdings was the holding company for DynCorp International, a provider of specialized mission-critical professional and support services to government and commercial customers, including aviation services, logistics, and training. DynCorp's operations were acquired and integrated into Amentum in 2020. Delta Tucker Holdings does not publish public APIs; this profile is preserved as a corporate-history index.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/delta-tucker-holdings/refs/heads/main/apis.yml)
+**Areas:** Defense · Government Services · Holding Company · Logistics · Mission Support · Private Company · Defunct
 
-## Scope
+## Delta Tucker Holdings on APIs.io (historical record)
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
-- **x-type:** company
+Everything profiled for Delta Tucker Holdings is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/delta-tucker-holdings/](https://apis.io/providers/delta-tucker-holdings/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+## API Evangelist rating
 
-- Defense, Government Services, Holding Company, Logistics, Mission Support, Private Company
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-## Timestamps
+## How this profile is made
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-28
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## APIs
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Delta Tucker Holdings: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-No public APIs are published by Delta Tucker Holdings. DynCorp operations were absorbed into Amentum.
+## Open an issue
 
-## Common Properties
-
-- [Successor (Amentum)](https://www.amentum.com)
-- [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=delta+tucker+holdings)
-- [Notes](https://en.wikipedia.org/wiki/DynCorp)
-
-## Maintainers
-
-- **Kin Lane** - kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/delta-tucker-holdings/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
